@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Navbar con Lista Desplegable</title>
+    <!-- Asegúrate de incluir Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        
+        <ul class="navbar-nav">
+            <!-- Aquí empieza la lista desplegable -->
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Frutas
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="#">Manzana</a>
+                    <a class="dropdown-item" href="#">Naranja</a>
+                    <a class="dropdown-item" href="#">Banana</a>
+                    <a class="dropdown-item" href="#">Fresa</a>
+                    <a class="dropdown-item" href="#">Uva</a>
+                </div>
+            </li>
+            <!-- Finaliza la lista desplegable -->
+        </ul>
+    </div>
+</nav>
+
+<!-- Asegúrate de incluir Bootstrap JS y sus dependencias -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+</body>
+</html>

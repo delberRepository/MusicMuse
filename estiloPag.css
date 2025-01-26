@@ -1,0 +1,562 @@
+@charset "UTF-8";
+/* Estilo general */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #000000;
+    margin: 0;
+    padding: 0;
+}
+
+header, section, aside  {
+    padding: 20px;
+    border-radius: 5px;
+   
+}
+header{
+	text-align: center;
+}
+
+
+.contenedorAB{
+	display: flex;
+    justify-content: space-between;
+    max-width: 1920px !important;
+    margin: 5px auto;
+    background-color:transparent;
+    height: 100vh; /* Altura de toda la ventana del navegador */
+    margin-bottom: 90px;
+    
+	
+}
+.fixed-height-card {
+    height: 520px; /* Ajusta esta altura según tus necesidades */
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .fixed-height-card .card-body {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  
+  }
+  
+  section {
+    background-color: #1D1C1C;
+    width: 100%; /* Ocupa el 93% del ancho disponible */
+    float: right; /* Mantiene el alineamiento a la derecha */
+    padding: 1px; /* Espaciado interno */
+    box-sizing: border-box; /* Incluye padding y bordes en el ancho y alto */
+    text-align: left; /* Alineación del texto dentro del section */
+    height: 100vh; /* Altura de toda la ventana del navegador */
+    overflow-y: auto; /* Habilita el scroll vertical si el contenido desborda */
+}
+
+article{
+	margin-top: 35px;
+    
+}
+.artSemana{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-y: hidden;
+    
+}
+.card{
+    margin: 5px;
+    
+}
+.logo{
+    width: 100px;
+    margin-left: 30px;
+    filter: brightness(0) saturate(100%) invert(20%) sepia(100%) saturate(2000%) hue-rotate(0deg) brightness(90%) contrast(100%);
+
+}
+.logo-overlay {
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center; /* Centra el logo horizontalmente */
+    align-items: center; /* Centra el logo verticalmente */
+    opacity: 0; /* Inicia completamente transparente */
+    transition: opacity 0.5s ease; /* Suaviza la transición de la opacidad */
+    background-color: rgba(0, 0, 0, 0); /* Opcional: añade un fondo semitransparente */
+
+
+}
+
+.logo-overlay .dude {
+    width: 100%; /* Ajusta esto según el tamaño deseado del logo */
+}
+
+.card:hover .logo-overlay {
+    opacity: 1; /* Cambia la opacidad a 1 al hacer hover, haciendo el logo visible */
+}
+
+
+
+aside {
+
+    box-sizing: border-box;
+    padding: 2px; /* Espacio alrededor del contenido dentro de 'aside' */
+    height: 100vh;/* Ajustado para igualar la altura de 'section' */
+    background-color: transparent;/* Color de fondo para 'aside' */
+    overflow-y: auto;
+}
+
+
+.caja1, .caja2 {
+    background-color: #2D2C2C; /* Un color ligeramente más claro que el fondo de 'aside' */
+    padding: 15px; /* Espacio alrededor del contenido dentro de las cajas */
+    margin-bottom: 4px; /* Espacio entre las cajas */
+    border-radius: 5px;
+    box-sizing: border-box; /* Asegúrate de que el padding no afecte el ancho total */
+    width: auto; /* Asegúrate de que el ancho de las cajas se ajuste al de 'aside' */
+}
+
+.caja1 {
+    height: 20%; /* Ajusta este porcentaje según sea necesario */
+	 overflow-y: auto;
+     padding: 10px 25px;
+     margin-top: -10px;
+	
+	
+	
+}
+
+.caja2 {
+    height: 82%; /* Ajusta este porcentaje según sea necesario */
+    margin-bottom: 0; /* No es necesario margen en la última caja */
+	overflow-y: auto;
+    padding: 25px;
+    
+	
+	
+}
+.tuMusica{
+display: flex;	
+cursor: pointer;	
+
+}
+
+
+
+
+ .iconos svg, .iconos i{
+	color: #B9B4B4;
+	width: 30px;
+	height: 22px;
+	margin-bottom: 28px;
+	margin-right: 15px;
+	margin-top: 8px;
+    font-size: 30px;	
+	
+}
+.iconoCinta svg{
+	color: #B9B4B4;
+	width: 40px;
+	height: 32px;
+	margin-right: 7px;
+	
+}
+.btn-group {
+ background-color: pink !important;	
+ color: pink !important;
+	border-radius: 30px;
+}
+.cursor{
+	cursor: pointer;
+}
+#botones{
+display: flex;	
+border-radius: 30px;	
+ 
+	
+ 	
+}
+
+  .inputBusqueda{
+	margin-top: 17px;  
+    background-color: #5E5E5E;
+    border-radius: 20px;
+	border: 2px solid white; 
+	width: 300px;  
+	color:  whitesmoke; 
+	text-align: center;  
+}
+#shadow-host-companion {
+    display: none;
+}
+
+
+
+nav {
+	color: rgb(255, 255, 255);
+    background-color:  #1D1C1C;
+    text-align: right;
+    margin: 5px 0px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    
+}
+.totalNav{
+    margin-bottom: -13px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 10px;
+}
+
+nav ul li  {
+    display: inline;
+    margin-right: 20px;
+}
+
+
+nav ul li a {
+    text-decoration: none;
+    color: #FEFEFE;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #e5dede;
+}
+.nav-item {
+    cursor: pointer;
+    padding: 10px;
+    position: relative;
+   
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    color: #ffffff;
+    background-color: #676767;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 6px;
+    right: 0; 
+   
+}
+
+.dropdown-content a {
+    color: black;
+    padding: -10px 16px;
+    text-decoration: none;
+    display: block;
+
+}
+
+.nav-item:hover .dropdown-content {
+    display: block;
+}
+
+
+h1, h2, h3, h4{
+    color: #B9B4B4;
+}
+
+p {
+color: #fefefe;
+line-height: 2.2;
+}
+
+/* Estilo pasteloso */
+header {
+    background-color: #1D1C1C; /* Azul claro pastel */
+}
+
+
+
+
+footer {
+   
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+     
+    background-color:  #5d0a0a;
+    height: 95px;
+    color: white;
+    position: fixed;
+    
+   
+   
+	
+}
+footer p{
+	color: rgb(255, 255, 255);
+    font-size: 18px;
+    margin-top: -5px;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+
+.contenedorIconos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: -85px;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    
+    
+
+}
+.conteinerButtonTime{
+    width:100% ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 254px;
+    margin-top: 33px;
+    
+}
+.progresConteiner{
+    background-color: white;
+    width: 100%;
+    max-width: 400px;
+    height: 5px;
+    
+    bottom: 55px;
+    overflow: hidden;
+    border-radius: 4px;
+    
+   
+
+}
+#current_time, #current_audio{
+    font-size: 30px;
+    position: absolute;
+    margin-top: -40px; 
+    margin-left: -60px;   
+}
+ #progress{
+    background-color: #6cff11;
+    width: 0;
+    height: 100%;
+    
+
+} 
+.buttons{
+    font-size: 2.1rem;
+	color: white;
+	width: 80px;
+	height: 45px;
+    display: flex;
+    justify-content:center;
+    padding-bottom: 50px;
+    gap: 54px;
+    margin-top: 27px;
+    
+    
+    
+    
+	
+}
+
+
+
+
+   /* Estilo Para Ventana Registro */
+    .ventana {
+        display: none; /* Hidden by default */
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Sit on top */
+        left: 0;
+        top: 0;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        overflow: auto; /* Enable scroll if needed */
+        background-color: rgb(0,0,0); /* Fallback color */
+        background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    }
+    
+    
+
+    .boton{
+        width: 250px;
+        background-color: #ffffff; 
+        color: #71B448; 
+        border: 1px solid #71B448; 
+        border-radius: 10px; 
+        padding: 20px 30px; 
+        text-align: center; 
+        text-decoration: none; 
+        display: inline-block;
+        font-size: 16px; 
+        transition: background-color 1s ease;
+        cursor: pointer;    
+    }
+    .boton:hover{
+        background-color: #ECFCE2;
+    }
+    .botones{
+        padding: 20px 0px;
+        margin-left: 0px;
+        /*estos tres parametros
+        
+         muy importantes
+        para que se queden centrados
+        los elementos de un div*/
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .orden{
+        padding: 20px 0px;
+        margin-left: 0px;
+        display: flex;	
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    
+    }
+    #artista{
+        color: #00a2ff;
+        border: 1px solid #00a2ff; 
+
+        
+    }
+    #artista:hover{
+        background-color:#E2F1FC;
+        
+    }
+    /* Contenido del Modal*/
+    .contenidoVentana {
+        background-color: #4f4e4e;
+        margin: 8% auto; /* 15% from the top and centered */
+        border: 1px solid #5d5b5b;
+        width: 50%; /* Could be more or less, depending on screen size */
+        border-radius: 10px;
+        
+       
+       
+    }
+    a:link, a:visited, a:hover, a:active, a:focus {
+        color: inherit; /* El color del texto será el mismo que el de su contenedor */
+        text-decoration: none; /* Elimina el subrayado del enlace */
+        
+    }
+    .rotulo{
+     background-color: #5c5c5c; 
+     border-radius: 9px 9px 0px 0px;
+     padding: 3px;
+     text-align: center;
+     font-size: 24px;
+    }
+
+    /* El Botón Close (x) */
+    .close, .close2 {
+        color: black;
+        float: right;
+        font-size: 20px;
+        font-weight: bold;
+        padding: 7px;
+        cursor: pointer;	
+      
+    }
+    
+    .close:hover,
+    .close:focus {
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+    }
+    img{
+        max-width: 300px;
+        text-align: center;
+        margin-right: 35px;
+      
+    }
+    .barry{
+        max-width: 460px;
+    }
+    .fotosReg{
+        max-width: 125px;
+        text-align: center;
+        margin-right: 35px;
+
+    }
+
+    button {
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+    }   
+   
+    /* El popup (por defecto está oculto) */
+.popup {
+    display: none; /* Oculto por defecto */
+    position: fixed; /* Posición fija */
+    z-index: 1; /* Sobre otros elementos */
+    left: 0;
+    top: 0;
+    width: 100%; /* Ancho completo */
+    height: 100%; /* Alto completo */
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+   
+}
+
+/* Contenido del popup */
+.popup-content {
+    background-color: #fff;
+    margin: 15% auto; /* 15% desde la parte superior y centrado horizontalmente */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Ancho del 80% */
+    max-width: 500px; /* Ancho máximo */
+    border-radius: 5px; /* Bordes redondeados */
+    margin-top: 20px;
+}
+
+/* Botón de cierre (x) */
+.closeBtn {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.closeBtn:hover,
+.closeBtn:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Media query para estilos responsivos (opcional) */
+@media (max-width: 600px) {
+        header, nav, section, aside, footer, .caja1, .caja2 {
+        margin: 10px auto;
+        padding: 10px;
+    }
+    .artSemana{
+    display: flex;
+    
+    
+}
+}
+
+
+
+
