@@ -10,8 +10,18 @@ Cuando instales XAMPP, cambia el archivo php.ini por el que adjunto, el cual bá
 La ruta es:
 /Applications/XAMPP/xamppfiles/etc
 
+
 Una vez instalado XAMPP, carga la base de datos que adjunto en PHPMyAdmin.
 El nombre del archivo es "BaseMusicas.sql", ubicado en la carpeta "basesDatos".
+
+Copia este directorio en la siguiente ruta:
+/Applications/XAMPP
+*importante que la carpeta del directorio se llame "MusicMuse".
+
+Luego accede en el navegador a localhost/MusicMuse
+
+
+
 
 Adjunto la documentación donde desgloso el funcionamiento de la aplicación.
 
