@@ -3,6 +3,8 @@ Aplicación para artistas independientes que desean compartir su música
 
 Este es un proyecto de fin de grado que desarrollé con la intención de mostrar mis habilidades.
 
+Es necesario instalar XAMPP para poder cargar la base de datos y hacer las peticiones al servidor.
+
 Cuando instales XAMPP, cambia el archivo php.ini por el que adjunto, el cual básicamente habilita los permisos para que se puedan subir archivos de hasta 100 MB. Por defecto, solo se permiten archivos de hasta 40 MB.
 
 La ruta es:
