@@ -12,7 +12,8 @@ La ruta es:
 
 
 Una vez instalado XAMPP, carga la base de datos que adjunto en PHPMyAdmin.
-El nombre del archivo es "BaseMusicas.sql", ubicado en la carpeta "basesDatos".
+El nombre del archivo es "BaseMusicas.sql", ubicado en la carpeta "basesDatos". 
+IMPORTANTE nombrar como "BaseMusicas" en PHPmyAdmin
 
 Copia este directorio en la siguiente ruta:
 /Applications/XAMPP
