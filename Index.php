@@ -116,6 +116,10 @@ session_start(); // Asegúrate de que la sesión esté iniciada
 				text-decoration: none;
 				cursor: pointer;
 			}
+		       	.logo1 {
+			            height: 50px;
+			            position:relative; 
+				}
 
     </style>
 </head>  
@@ -125,8 +129,9 @@ session_start(); // Asegúrate de que la sesión esté iniciada
 
  
 	
-	<nav>
-    <ul >
+       <nav>
+        <ul>
+	 <img class="logo1" src="LOGO.png">
         <?php if (isset($_SESSION['usuario'])&& !$_SESSION['rol'] ): ?>
             <li class="nav-item">
                 <?= "Hola ".htmlspecialchars($_SESSION['usuario']) ."!"; ?>
